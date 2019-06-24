@@ -30,4 +30,37 @@
         <servlet-name>ajaxGetNameServlet</servlet-name>
         <url-pattern>/ajaxGetName</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ajaxRequestServlet</servlet-name>
+        <servlet-class>com.java1234.c02XMLHTTPRequest.AjaxRequestServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ajaxRequestServlet</servlet-name>
+        <url-pattern>/ajaxRequest</url-pattern>
+    </servlet-mapping>
+
+    <!-- 字符串拼接的json-->
+    <servlet>
+        <servlet-name>getAjaxJsonInfoServlet</servlet-name>
+        <servlet-class>com.java1234.c03json.GetAjaxInfoServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>getAjaxJsonInfoServlet</servlet-name>
+        <url-pattern>/getAjaxJsonInfo</url-pattern>
+    </servlet-mapping>
+
+    <!-- 使用jsonlib -->
+    <servlet>
+        <servlet-name>GetAjaxJsonlibInfoServlet</servlet-name>
+        <servlet-class>com.java1234.c04jsonlib.GetAjaxInfoServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>GetAjaxJsonlibInfoServlet</servlet-name>
+        <url-pattern>/getAjaxJsonlibInfo</url-pattern>
+    </servlet-mapping>
+
 </web-app>
