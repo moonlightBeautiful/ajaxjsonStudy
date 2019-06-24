@@ -63,4 +63,14 @@
         <url-pattern>/getAjaxJsonlibInfo</url-pattern>
     </servlet-mapping>
 
+    <!-- 使用jsonlib：验证用户名和 -->
+    <servlet>
+        <servlet-name>GetAjaxJsonlibExampleInfoServlet</servlet-name>
+        <servlet-class>com.java1234.c05jsonlibExample.GetAjaxInfoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetAjaxJsonlibExampleInfoServlet</servlet-name>
+        <url-pattern>/getAjaxJsonlibExampleInfo</url-pattern>
+    </servlet-mapping>
+
 </web-app>
