@@ -66,17 +66,21 @@ public class GetAjaxInfoServlet extends HttpServlet {
         JSONObject jsonObject3 = new JSONObject();
         jsonObject3.put("name", "赵六");
         jsonObject3.put("age", 24);
-        // [{name:"张三",age:"22"},
-        // {name:"王五",age:"23"},
-        // {name:"赵六",age:"24"}]
-        jsonArray.add(jsonObject1);
-        jsonArray.add(jsonObject2);
-        jsonArray.add(jsonObject3);
-        // {"students":[
+        // [
         //      {name:"张三",age:"22"},
         //      {name:"王五",age:"23"},
         //      {name:"赵六",age:"24"}
-        //    ]}
+        // ]
+        jsonArray.add(jsonObject1);
+        jsonArray.add(jsonObject2);
+        jsonArray.add(jsonObject3);
+        // {"students":
+        //    [
+        //      {name:"张三",age:"22"},
+        //      {name:"王五",age:"23"},
+        //      {name:"赵六",age:"24"}
+        //    ]
+        // }
         resultJson.put("students", jsonArray);
         out.println(resultJson);
         out.flush();
