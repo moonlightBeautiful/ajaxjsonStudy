@@ -59,9 +59,11 @@
 </script>
 <body>
 <div style="text-align: center;">
-    <div style="padding: 10px;"><input type="button" style="border: 1px solid red;" value="获取姓名" onclick="loadName()"/>&nbsp;&nbsp;<input
-            type="text" id="name" name="name" value="${name }" style="border-bottom: 1px solid red"/>&nbsp;&nbsp;页面刷新次数：<font
-            color="red">${countAjax }</font></div>
+    <div style="padding: 10px;">
+        <input type="button" style="border: 1px solid red;" value="获取姓名" onclick="loadName()"/>&nbsp;&nbsp;
+        <input type="text" id="name" name="name" value="${name }" style="border-bottom: 1px solid red"/>&nbsp;&nbsp;
+        页面刷新次数：<font color="red">${countAjax }</font>
+    </div>
 </div>
 <div id="focus">
     <div class="hd">

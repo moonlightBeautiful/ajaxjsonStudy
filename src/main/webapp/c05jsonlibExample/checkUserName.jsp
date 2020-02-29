@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-         pageEncoding="UTF-8" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -37,8 +36,7 @@
     </tr>
     <tr>
         <td>用户名：</td>
-        <td><input type="text" id="userName" name="userName" onblur="checkUserName()"/>&nbsp;&nbsp;<font
-                id="tip"></font></td>
+        <td><input type="text" id="userName" name="userName" onblur="checkUserName()"/>&nbsp;&nbsp;<span id="tip"></span></td>
     </tr>
     <tr>
         <td>密码：</td>

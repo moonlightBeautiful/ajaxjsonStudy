@@ -19,8 +19,6 @@
                 if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
                     alert(xmlHttp.responseText);
                     var dataObj = eval("(" + xmlHttp.responseText + ")");
-                    alert(dataObj.name);
-                    alert(dataObj.age);
                     document.getElementById("name").value = dataObj.name;
                     document.getElementById("age").value = dataObj.age;
                 }

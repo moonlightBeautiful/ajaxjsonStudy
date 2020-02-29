@@ -4,7 +4,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Insert title here</title>
+    <title>XMLHttpRequest对象学习</title>
     <script type="text/javascript">
         function loadName() {
             var xmlHttp;
@@ -14,6 +14,16 @@
                 xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
             }
             alert("readState状态：" + xmlHttp.readyState + ";status状态：" + xmlHttp.status);
+
+            //get方式
+            xmlHttp.open("get", "/ajaxRequest?name=jack&age=11", true);
+            xmlHttp.send();
+
+            //post方式
+            /*xmlHttp.open("post", "/ajaxRequest", true);
+            xmlHttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            xmlHttp.send("name=jack&age=11");*/
+
             xmlHttp.onreadystatechange = function () {
                 alert("readState状态：" + xmlHttp.readyState + ";status状态：" + xmlHttp.status);
                 if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
@@ -21,19 +31,15 @@
                     document.getElementById("name").value = xmlHttp.responseText;
                 }
             };
-            xmlHttp.open("get", "/ajaxRequest?name=jack&age=11", true);
-            xmlHttp.send();
-
-            /*xmlHttp.open("post", "/ajaxRequest", true);
-            xmlHttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-            xmlHttp.send("name=jack&age=11");*/
         }
     </script>
 </head>
 <body>
 <div style="text-align: center;">
-    <div><input type="button" onclick="loadName()" value="Ajax获取数据"/>&nbsp;&nbsp;<input type="text" id="name"
-                                                                                        name="name"/></div>
+    <div>
+        <input type="button" onclick="loadName()" value="Ajax获取数据"/>&nbsp;&nbsp;
+        <input type="text" id="name" name="name"/>
+    </div>
 </div>
 </body>
 </html>

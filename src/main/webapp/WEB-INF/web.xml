@@ -33,7 +33,7 @@
 
     <servlet>
         <servlet-name>ajaxRequestServlet</servlet-name>
-        <servlet-class>com.java1234.c02XMLHTTPRequest.AjaxRequestServlet</servlet-class>
+        <servlet-class>com.java1234.c02XMLHttpRequest.AjaxRequestServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
