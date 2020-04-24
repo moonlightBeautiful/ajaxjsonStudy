@@ -1,12 +1,13 @@
-package com.java1234.c01ajaxHello;
+package com.ims.c03json;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.io.PrintWriter;
 
-public class GetNameServlet extends HttpServlet {
+public class GetAjaxInfoServlet extends HttpServlet {
 
     /**
      *
@@ -22,9 +23,18 @@ public class GetNameServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        request.setAttribute("name", "今晚月色真美");
-        request.getRequestDispatcher("c01ajaxHello/getName.jsp").forward(request, response);
-    }
+        request.setCharacterEncoding("utf-8");
+        response.setContentType("text/html;charset=utf-8");
+        String name = request.getParameter("name");
+        String age = request.getParameter("age");
+        System.out.println("name=" + name);
+        System.out.println("age=" + age);
+        PrintWriter out = response.getWriter();
+        String jsonStr = "{\"name\":\"张三\",\"age\":22}";
+        out.println(jsonStr);
+        out.flush();
+        out.close();
 
+    }
 
 }

@@ -13,7 +13,7 @@
     </welcome-file-list>
     <servlet>
         <servlet-name>getNameServlet</servlet-name>
-        <servlet-class>com.java1234.c01ajaxHello.GetNameServlet</servlet-class>
+        <servlet-class>com.ims.c01ajaxHello.GetNameServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
@@ -23,7 +23,7 @@
 
     <servlet>
         <servlet-name>ajaxGetNameServlet</servlet-name>
-        <servlet-class>com.java1234.c01ajaxHello.AjaxGetNameServlet</servlet-class>
+        <servlet-class>com.ims.c01ajaxHello.AjaxGetNameServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
@@ -33,7 +33,7 @@
 
     <servlet>
         <servlet-name>ajaxRequestServlet</servlet-name>
-        <servlet-class>com.java1234.c02XMLHttpRequest.AjaxRequestServlet</servlet-class>
+        <servlet-class>com.ims.c02XMLHttpRequest.AjaxRequestServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
@@ -44,7 +44,7 @@
     <!-- 字符串拼接的json-->
     <servlet>
         <servlet-name>getAjaxJsonInfoServlet</servlet-name>
-        <servlet-class>com.java1234.c03json.GetAjaxInfoServlet</servlet-class>
+        <servlet-class>com.ims.c03json.GetAjaxInfoServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
@@ -55,7 +55,7 @@
     <!-- 使用jsonlib -->
     <servlet>
         <servlet-name>GetAjaxJsonlibInfoServlet</servlet-name>
-        <servlet-class>com.java1234.c04jsonlib.GetAjaxInfoServlet</servlet-class>
+        <servlet-class>com.ims.c04jsonlib.GetAjaxInfoServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
@@ -66,7 +66,7 @@
     <!-- 使用jsonlib：验证用户名和 -->
     <servlet>
         <servlet-name>GetAjaxJsonlibExampleInfoServlet</servlet-name>
-        <servlet-class>com.java1234.c05jsonlibExample.GetAjaxInfoServlet</servlet-class>
+        <servlet-class>com.ims.c05jsonlibExample.GetAjaxInfoServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>GetAjaxJsonlibExampleInfoServlet</servlet-name>

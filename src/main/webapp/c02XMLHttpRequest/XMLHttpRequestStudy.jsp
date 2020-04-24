@@ -13,7 +13,6 @@
             } else {
                 xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
             }
-            alert("readState状态：" + xmlHttp.readyState + ";status状态：" + xmlHttp.status);
 
             //get方式
             xmlHttp.open("get", "/ajaxRequest?name=jack&age=11", true);

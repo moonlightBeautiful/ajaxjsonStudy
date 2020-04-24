@@ -1,4 +1,4 @@
-package com.java1234.c01ajaxHello;
+package com.ims.c01ajaxHello;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;

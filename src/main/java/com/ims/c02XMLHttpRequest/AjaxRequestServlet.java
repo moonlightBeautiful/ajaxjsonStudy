@@ -1,4 +1,4 @@
-package com.java1234.c02XMLHttpRequest;
+package com.ims.c02XMLHttpRequest;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;

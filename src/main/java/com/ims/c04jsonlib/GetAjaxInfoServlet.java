@@ -1,4 +1,4 @@
-package com.java1234.c04jsonlib;
+package com.ims.c04jsonlib;
 
 import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
