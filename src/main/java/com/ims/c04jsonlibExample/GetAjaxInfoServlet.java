@@ -1,4 +1,4 @@
-package com.ims.c05jsonlibExample;
+package com.ims.c04jsonlibExample;
 
 import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;

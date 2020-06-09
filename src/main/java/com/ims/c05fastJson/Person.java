@@ -1,6 +1,4 @@
-package com.ims.c06fastJson;
-
-import com.alibaba.fastjson.annotation.JSONField;
+package com.ims.c05fastJson;
 
 import java.util.Date;
 

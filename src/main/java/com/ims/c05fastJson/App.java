@@ -1,4 +1,4 @@
-package com.ims.c06fastJson;
+package com.ims.c05fastJson;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;

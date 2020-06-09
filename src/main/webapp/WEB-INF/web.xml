@@ -66,7 +66,7 @@
     <!-- 使用jsonlib：验证用户名和 -->
     <servlet>
         <servlet-name>GetAjaxJsonlibExampleInfoServlet</servlet-name>
-        <servlet-class>com.ims.c05jsonlibExample.GetAjaxInfoServlet</servlet-class>
+        <servlet-class>com.ims.c04jsonlibExample.GetAjaxInfoServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>GetAjaxJsonlibExampleInfoServlet</servlet-name>
